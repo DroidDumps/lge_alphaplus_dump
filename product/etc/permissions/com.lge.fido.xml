@@ -1,0 +1,6 @@
+
+<!-- This is the LGE FIDO features. -->
+<permissions>
+    <!-- for LgeFido hal service  -->
+    <feature name="com.lge.fido" />
+</permissions>

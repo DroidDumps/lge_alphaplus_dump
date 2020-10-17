@@ -1,0 +1,6 @@
+
+<!-- This is the LGE FIDO features. -->
+<permissions>
+    <!-- for FingerprintServiceEx  -->
+    <feature name="com.lge.fido.fingerex" />
+</permissions>

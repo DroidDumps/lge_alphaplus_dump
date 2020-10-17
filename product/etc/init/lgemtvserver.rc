@@ -1,0 +1,20 @@
+service lgemtvserver /product/bin/lgemtvserver
+    class main
+    user media
+    group system audio media graphics sdcard_rw
+    disabled
+
+on post-fs-data && property:ro.boot.vendor.lge.dtv=1
+    enable lgemtvserver
+
+on post-fs-data && property:ro.boot.vendor.lge.dtv=2
+    mkdir /data/cas 0770 system media
+    enable lgemtvserver
+
+on post-fs-data && property:ro.boot.vendor.lge.dtv=3
+    mkdir /data/tvbox 0770 system system
+    chown system system /data/tvbox
+    enable lgemtvserver
+
+on property:init.svc.media=restarting
+    restart lgemtvserver
