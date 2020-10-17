@@ -1,0 +1,16 @@
+<!--
+    Input:
+        vendor.lge.hardware.biometrics.fingerprint@2.1-override.xml
+-->
+<manifest version="1.0" type="device">
+    <hal format="hidl" override="true">
+        <name>android.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IBiometricsFingerprint/default</fqname>
+    </hal>
+    <hal format="hidl" override="true">
+        <name>vendor.lge.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::ILgeBiometricsFingerprint/default</fqname>
+    </hal>
+</manifest>

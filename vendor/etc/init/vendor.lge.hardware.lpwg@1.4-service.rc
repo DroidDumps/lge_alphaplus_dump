@@ -1,0 +1,4 @@
+service vendor.lge-lpwg-hal-1-4 /vendor/bin/hw/vendor.lge.hardware.lpwg@1.4-service
+    class hal
+    user system
+    group system media_rw sdcard_rw

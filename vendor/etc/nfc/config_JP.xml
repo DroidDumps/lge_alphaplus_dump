@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<Configure>
+    <!-- Japan Open / Japan -->
+    <Config operator="" country="JP" device="">
+        <SecureElementType> INITVALUE </SecureElementType>
+        <AccessControlEnable> false </AccessControlEnable>
+        <HostCardEmulationScenario> host, host, na, na, na </HostCardEmulationScenario>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <BlockRoute> false </BlockRoute>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+    </Config>
+    <!-- NTT Docomo / Japan -->
+    <Config operator="DCM" country="JP" device="">
+        <PopupDialogType> INITVALUE </PopupDialogType>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+    </Config>
+    <!-- KDDI / Japan -->
+    <Config operator="KDDI" country="JP" device="">
+        <PopupDialogType> INITVALUE </PopupDialogType>
+        <EmptyPopupSupport> false </EmptyPopupSupport>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+    </Config>
+    <!-- For flash DCM_JP (OA1930) -->
+    <Config operator="DCM" country="JP" device="OA1930">
+        <SecureElementType> INITVALUE </SecureElementType>
+        <AccessControlEnable> false </AccessControlEnable>
+        <HostCardEmulationScenario> host, host, na, na, na </HostCardEmulationScenario>
+        <AutomaticSwitchingSupport> false </AutomaticSwitchingSupport>
+        <SIMSwapEnable> false </SIMSwapEnable>
+        <SwpRetryInit> false </SwpRetryInit>
+        <BlockRoute> false </BlockRoute>
+        <NfcAntennaPopup> none </NfcAntennaPopup>
+    </Config>
+</Configure>
